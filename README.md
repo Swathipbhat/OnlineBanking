@@ -2,8 +2,9 @@
 ### ABOUT THIS PROJECT ✅
     Building a website similar to Udemy.It is a online learning platform that offers anyone, anywhere, 
     access to online courses through recorded videos.
+----------
 
-Pages & Features 👇
+### Pages & Features 👇
 
 User Side
 
@@ -28,8 +29,8 @@ Admin Side:
     <li data-item="tab-one">Add Course Content (Videos & Author Content)</li>
     <li data-item="tab-one">View Enrolled students in particular course</li>
 </ul>
-
-## Tech Stacks 🔧
+------------
+### Tech Stacks 🔧
 
 <ul id="tabbar"> 
     <li data-item="tab-one">HTML</li>
