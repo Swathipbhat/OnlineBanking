@@ -29,7 +29,8 @@ Admin Side:
     <li data-item="tab-one">Add Course Content (Videos & Author Content)</li>
     <li data-item="tab-one">View Enrolled students in particular course</li>
 </ul>
-------------
+
+---------------------
 
 ### Tech Stacks 🔧
 
@@ -42,8 +43,9 @@ Admin Side:
     <li data-item="tab-one">NodeJS</li>
     <li data-item="tab-one">React</li>
     <li data-item="tab-one">AngularJS</li>
+ </ul>
 
-    ---------------
+---------------
     
 
 
