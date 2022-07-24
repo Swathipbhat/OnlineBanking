@@ -30,6 +30,7 @@ Admin Side:
     <li data-item="tab-one">View Enrolled students in particular course</li>
 </ul>
 ------------
+
 ### Tech Stacks 🔧
 
 <ul id="tabbar"> 
@@ -42,7 +43,8 @@ Admin Side:
     <li data-item="tab-one">React</li>
     <li data-item="tab-one">AngularJS</li>
 
-
+    ---------------
+    
 
 
 
