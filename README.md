@@ -1,4 +1,4 @@
-# OnlineCourseWeb
+# Online Banking Application
 ### ABOUT THIS PROJECT ✅
     The system is an online banking application that can be accessed with the proper login details.The main objective of our project is to provide more security while performing online transactions by providing efficient authentication etc. In the existing system, we can perform all the operations using a single user id and password
 
