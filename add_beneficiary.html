@@ -1,0 +1,87 @@
+<html>
+<body>
+<head><title>Add Beneficiary</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="CSS/add_beneficiary.css" />
+<style>
+ body{
+  background-color: rgb(167, 215, 216);
+}
+.add_beneficiary_container {
+  border: 1px solid white;
+    padding: 2%;
+    margin: 5% auto;
+    background-color: #faf2f4;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(88, 80, 81, 0.5);
+   width: 35%;
+   
+ 
+}
+.add_beneficiary_container h3{
+text-align: center;
+background-color: #faf2f4;
+font-size: 3.5vh;
+color: crimson;
+font-weight: 500;
+padding: 15px;
+}
+
+.add_beneficiary_container input,
+select {
+  width: 75%;
+  height: 7.9%;
+  padding: 10px;
+  margin: 1.5%;
+  margin-left: 12%;
+  border: 0px;
+  border-radius: 3px;
+  font-size: 15px;
+  
+}
+
+.add_beneficiary_container input[type="submit"] {
+  color: white;
+  font-size: 20px;
+  background-color: crimson;
+  border-radius: 3px;
+  
+  border: 0px;
+}
+
+</style>
+</head>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>BR</b> Bank</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="transaction.html" class="w3-bar-item w3-button">Transaction</a>
+      <a href="my_account.html" class="w3-bar-item w3-button">Account Details</a>
+      <a href="debit_card_form.html" class="w3-bar-item w3-button">Card Application</a>
+      <a href="add_beneficiary.html" class="w3-bar-item w3-button">Add beneficiary</a>
+      <a href="loans.html" class="w3-bar-item w3-button">Loan</a>
+      <a href="signup.html" class="w3-bar-item w3-button">Sign up</a>
+    </div>
+  </div>
+</div>
+<br>
+    <div class="add_beneficiary_container">
+        <center><h3>Add Beneficiary</h3></center>
+        <form method="post">
+            <br><input type="text" name="beneficiary_name" placeholder="Beneficiary Name" required><br>
+            <input type="text" name="beneficiary_acno" placeholder="Beneficiary A/c no" required><br>
+            <input type="text" name="Ifsc_code" placeholder="IFSC Code" required><br>
+            <select name="beneficiary_acc_type" required>
+                <option value=""disabled selected>Account type</option>
+                <option value="Saving">Saving</option>
+                <option value="Current">Current</option><br>
+        </select><br>
+            <input type="submit" name="add_beneficiary_btn" value="Add"><br><br>
+
+        </form>
+        </div>
+</body>
+</html>
+

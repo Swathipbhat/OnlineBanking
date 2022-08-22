@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<meta name = 'viewport' content = 'width=device-width'/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<style>
+ 
+    :root {
+  --color: #103;
+  --direction: center;
+  --distance: 15;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;  
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(167, 215, 216);
+  font-size: clamp(18px, 1.4vw, 22px);
+  font-family: sans-serif;
+  
+  padding: 2rem;
+  gap: 10px;
+}
+.box {
+
+  padding: 30px 30px 50px;
+  width: min(100%, 500px);
+  box-shadow: 1px 1px 2px rgba(218, 3, 3, 0.1),
+    -1px -1px 2px rgba(226, 59, 59, 0.3);
+  background: #faf2f4;
+}
+.box:focus-within h2 {
+  letter-spacing: 0.1em;
+}
+hr {
+  border: 1px solid #fff;
+}
+legend {
+  text-align: var(--direction);
+  padding: 0 calc(1px * var(--distance));
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: var(--color);
+}
+fieldset {
+  border: none;
+  border-top: 1px solid var(--color);
+  padding: 10px 0;
+}
+hr {
+  display: block;
+  margin: 0 0 2rem;
+  border-color: var(--color);
+}
+.box form div {
+  margin: 0 0 2rem 0;
+}
+h2 {
+  color: crimson;
+  padding: 0 0 25px;
+  text-align: center;
+  text-decoration: underline;
+  transition: all 0.1s;
+}
+.box form div label {
+  display: block;
+  padding: 0 0 8px;
+  color: var(--color);
+  letter-spacing: 0.04em;
+}
+.box form div input {
+  outline: none;
+  border: none;
+  background: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4),
+    inset -1px -1px 2px rgba(55, 55, 55, 0.3);
+}
+.box form div input::placeholder {
+  color: var(--color);
+  opacity: 0.6;
+  letter-spacing: 0.04em;
+}
+button {
+  outline: none;
+  border: none;
+  width: 70%;
+  padding: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  margin-top: 3%;
+  transition: all 0.1s;
+  color: #fff;
+  background: none;
+  color: var(--color);
+  box-shadow: 1px 1px 2px rgba(179, 17, 52, 0.6),
+    -1px -1px 2px rgba(231, 98, 98, 0.7);
+  color: #fff;
+  background: rgb(243, 63, 99);
+}
+button a{
+    color: rgb(249, 246, 253);
+}
+button:active {
+  transform: scale(0.9);
+}
+button:hover{
+  background-image:  linear-gradient(to right,rgb(255, 160, 184), rgb(125, 169, 228));
+}
+
+</style>
+</head>
+<body>
+	<div class = 'box'>
+		<form>
+			<h2>Sign Up</h2>
+			<fieldset>
+				<legend>Personal</legend>
+			</fieldset>
+			<div>
+				<label>First Name</label>
+        <input type = 'text' name = 'username' placeholder = 'Enter your name here' required = ''/>
+			</div> 
+			<div>
+				<label>Password</label>
+				<input type = 'password' name = 'password' placeholder = 'Enter your password here' required = ''/>
+			</div>
+			<fieldset>
+				<legend>Contact</legend>
+			</fieldset>
+			<div>
+				<label>Address</label>
+				<input type = 'text' name = 'address' placeholder = 'Address...' required = ''/>
+			</div>
+			<div>
+				<label>Phone Number</label>
+				<input type = 'tel' name = 'phone' placeholder = 'Phone Number' required = ''/>
+			</div>
+			<center><button>Submit</button></center>
+            
+            <center><p style="margin-top: 10px;">Already an user ?</p></center>
+            <center><button><a href="index.html">Login</a></button></center>
+		</form>
+	</div>
+</body>
+</html>

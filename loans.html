@@ -1,0 +1,207 @@
+<html>
+<head>
+    <title>Loan</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style>
+	   ::-webkit-input-placeholder {
+    font-size: 2.1vh;
+    /* //font-family:verdana; */
+  }
+  body{
+  background-color: rgb(204, 226, 226);
+}
+  .container_regfrm_container_parent_child {
+    border: 1px solid white;
+    padding: 2%;
+    margin: 5% auto;
+    background-color: #faf2f4;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(88, 80, 81, 0.5);
+    padding-top: 2px;
+    width: 50%;
+    
+    /* // border-radius: 15px; */
+  }
+  .container_regfrm_container_parent_child h1 {
+    text-align: center;  
+    background-color: #faf2f4;
+    font-size: 3.5vh;
+    color: crimson;
+    font-weight: 500;
+    padding: 15px;
+  }
+  .det {
+  margin-top: 15px;
+}
+
+  fieldset {
+  background: #faf2f4;
+  border: 1px solid #eb1f7e;
+	border-radius: 15px;
+}
+  legend {
+  padding: 10px;
+  
+	border-radius: 12px;
+	font-size: 1.05rem;
+  color: rgb(196, 33, 68);
+}
+label,
+input {
+  /* In order to define widths */
+  display: inline-block;
+}
+label {
+  width: 30%;
+  /* Positions the label text beside the input */
+  text-align: right;
+}
+
+label+input {
+  width: 30%;
+  /* Large margin-right to force the next element to the new-line
+           and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 4%;
+}
+
+
+  button {
+    width: 12%;
+    color: white;
+    font-size: 3vh;
+    background-color: crimson;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    display: block;
+    margin: 1% auto;
+    padding: 0.5%;
+  }
+</style>
+    </head>
+    <body>
+      <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="index.html" class="w3-bar-item w3-button"><b>BR</b> Bank</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">
+            <a href="transaction.html" class="w3-bar-item w3-button">Transaction</a>
+            <a href="my_account.html" class="w3-bar-item w3-button">Account Details</a>
+            <a href="debit_card_form.html" class="w3-bar-item w3-button">Card Application</a>
+            <a href="add_beneficiary.html" class="w3-bar-item w3-button">Add beneficiary</a>
+            <a href="loans.html" class="w3-bar-item w3-button">Loan</a>
+            <a href="signup.html" class="w3-bar-item w3-button">Sign up</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="container_regfrm_container_parent_child">
+      <form action="loans.html" method="POST">
+        <h1>Loan Application</h1>
+       
+        <fieldset>
+          <legend>Basic Information</legend>
+          <div class="det">
+          <label for="first name">First Name</label>
+          <input type="text" name="first-name" />
+          </div>
+          <div class="det">
+          <label for="middle initial">Middle Initial</label>
+          <input type="text" name="middle initial" />
+        </div>
+        <div class="det">
+          <label for="last name">Last Name</label>
+          <input type="text" name="last-name" />
+        </div>
+        <div class="det">
+          <label for="email address">Email</label>
+          <input type="text" name="email" placeholder="janedoe31@yahoo.com" />
+          </div>
+          <div class="det">
+          <label for="telephone">Contact Number</label>
+          <input type="text" name="telephone" />
+          </div>
+          <div class="det">
+          <label for="home address">Home Address</label>
+          <input type="text" name="address" />
+        </div>
+        </fieldset>
+     
+        <fieldset>
+          <legend>Work Information</legend>
+          <div class="det">
+          <label for="occupation">Current Occupation</label>
+          <input type="text" name="occupation" />
+          </div>
+          <div class="det">
+          <label for="company name">Employer Name</label>
+          <input type="text" name="company name" />
+          </div>
+          <div class="det">
+          <label for="company location">Employer Address</label>
+          <input type="text" name="company location" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Loan Type & Amount</legend>
+          <div class="det">
+          <label for="loan Type">Loan Type</label>
+          <input name="loan" list="type-of-loan"/>
+            <datalist id="type-of-loan" >
+              <option value="Commercial">
+              <option value="Real Estate">
+              <option value="Personal">
+              <option value="Mortgage">
+            </datalist>
+          </div>
+          <div class="det">
+          <label for="loan amount">Loan Amount</label>
+          <input type="text" name="loan amount" />
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend>Length of Loan</legend>
+          &nbsp;&nbsp;
+          <input type="radio" name="length-of-time" value="5">&nbsp;5
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="length-of-time" value="15">&nbsp;15
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="length-of-time" value="30">&nbsp;30
+        </fieldset>
+        <fieldset>
+          <legend>Marital Status</legend>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="status" value="single"> &nbsp;Single
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="status" value="married"> &nbsp;Married
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="status" value="divorced"> &nbsp;Divorced
+        </fieldset>
+        <fieldset>
+          <legend>Special Considerations</legend>
+          <div class="det">
+          <label for="down payment">Down Payment</label>
+          <input type="text" name="down payment" />
+        </div>
+          <div class="det"> &nbsp;&nbsp;
+          <input type="checkbox" name="out-of-state" value="out-of-state"> &nbsp;Out of State Resident
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="cosigner" value="cosigner">&nbsp;Cosigner
+        </div>
+        <div class="det">
+          <label for="name">Name of Cosigner</label>
+          <input type="text" name="name-of-cosigner" />
+        </div>
+          <div class="det">
+          <label for="occupation">Cosigner Occupation</label>
+          <input type="text" name="occupation" />
+        </div>
+        </fieldset>
+        
+      
+      <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  </html>
